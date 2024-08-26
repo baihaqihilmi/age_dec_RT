@@ -1,19 +1,18 @@
 from mivolo.predictor import Predictor
 import cv2
-import subprocess
 import torch
 from types import SimpleNamespace
 
 ### Camera Setup
 
+camera_module_path =""
 
-
-cap = cv2.VideoCapture("/dev/video4")
+cap = cv2.VideoCapture(camera_module_path)
 
 # Configuration dictionary with new keys
 config_dict = {
     'output': 'output',
-    'detector_weights': '../weights/yolov8x_person_face.pt',
+    'detector_weights': 'weights/yolov8x_person_face.pt',
     'checkpoint': 'weights/model_imdb_age_gender_4.22.pth.tar',
     'device': 'cuda:0',
     'with_persons': True,
