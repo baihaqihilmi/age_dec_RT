@@ -6,4 +6,4 @@ A Simple camera RT Interface with cv2 webcam
 
 This model is pretrained by : 
 All pretrained detector and full model  can be found in :
-[MIVOLO](https://github.com/wildchlamydia/mivolo) 
+[MIVOLO by WildChlamydia](https://github.com/wildchlamydia/mivolo) 
